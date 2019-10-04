@@ -3,144 +3,429 @@
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-html, body {
-    height: 100%;
-    font-family: 'Roboto', sans-serif;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
-h1, h2, h3, h4, h5 {
-    font-size: 18px;
-    margin-bottom: 15px;
-    font-family: 'Rubik', sans-serif;
+html,
+body {
+  padding-top: 30px;
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
+  font-family: "Roboto", sans-serif;
+  flex-wrap: wrap;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-size: 18px;
+  margin-bottom: 15px;
+  font-family: "Rubik", sans-serif;
+}
+
+.entire-page {
+  flex-wrap: wrap;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.header {
+  width: 90%;
+  margin: 0 auto;
+  padding-right: 20px;
+  padding-bottom: 25px;
+}
+
+.header .links {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 30px;
+  align-items: flex-end;
+}
+
+.header .links .logo a {
+  margin-top: 30px;
+}
+
+.header .links a {
+  text-decoration: none;
+  color: black;
+  font-size: 11pt;
+}
+
+.header .header-image {
+  margin-right: 100px;
 }
 
 p {
-    line-height: 1.4;
+  line-height: 1.4;
 }
 
 .container {
-    width: 800px;
-    margin: 0 auto;
+  width: 85%;
+  margin: 0 auto;
+}
+
+.container-about-page .middle-section {
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+.container-about-page .middle-section .img-and-body {
+  width: 45%;
+  border-bottom: 1px dashed black;
+  margin-top: 30px;
+  margin-left: 30px;
+  padding-bottom: 20px;
+  justify-content: space-between;
+}
+
+.container-about-page .top-section {
+  border-bottom: 1px dashed black;
+  padding-bottom: 20px;
+}
+
+.container-about-page .top-section .text-body {
+  margin-left: 20px;
+}
+
+.container-about-page .middle-section .img-and-body .button {
+  border: 2px solid black;
+  border-radius: 10px;
+  margin-top: 20px;
+  padding: 10px;
+  width: 30%;
+  text-align: center;
+}
+
+.container-about-page .middle-section .img-and-body .button a {
+  text-decoration: none;
+  color: black;
+}
+
+.container-about-page .middle-section .img-and-body .text-body {
+  margin-top: 10px;
 }
 
 .top-content {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    margin-bottom: 20px;
-    border-bottom: 1px dashed black;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-bottom: 20px;
+  border-bottom: 1px dashed black;
 }
 
 .top-content .text-container {
-    width: 48%;
-    padding: 0 1%;
-    padding-bottom: 20px;  
+  width: 48%;
+  padding: 0 1%;
+  padding-bottom: 20px;
 }
 
 .middle-content {
-    margin-bottom: 20px;
-    border-bottom: 1px dashed black;
+  margin-bottom: 20px;
+  border-bottom: 1px dashed black;
 }
 
 .middle-content h2 {
-    padding: 0 2%;
-    margin-bottom: 0;
+  padding: 0 2%;
+  margin-bottom: 0;
 }
 
 .middle-content .boxes {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
 .middle-content .boxes .box {
-    width: 12.5%;
-    height: 100px;
-    background: black;
-    margin: 20px 2.5%;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  width: 12.5%;
+  height: 100px;
+  margin: 20px 2.5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .bottom-content {
-    display: flex;
-    margin: 0 2% 20px;
-    justify-content: space-around;
+  display: flex;
+  margin: 0 2% 20px;
+  justify-content: space-around;
 }
 
 .bottom-content .text-container {
-    padding-right: 4%;
+  padding-right: 4%;
 }
 
 .bottom-content .text-container:last-child {
-    padding-right: 0;
+  padding-right: 0;
+}
+
+.bottom-section {
+  margin-top: 40px;
+  margin-left: 30px;
+  flex-wrap: wrap;
+}
+
+.bottom-section .text-body {
+  margin-bottom: 40px;
 }
 
 footer {
-    width: 100%;
-    background: black;
+  width: 100%;
+  background: black;
 }
 
 footer nav {
-    width: 60%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 2%;
-    font-size: 14px;
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 2%;
+  font-size: 14px;
 }
 
 footer nav a {
-    color: white;
-    text-decoration: none;
+  color: white;
+  text-decoration: none;
+}
+
+.middle-content .boxes .box1 {
+  color: white;
+  background-color: teal;
+  width: 12.5%;
+  height: 100px;
+  margin: 20px 2.5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.middle-content .boxes .box2 {
+  color: white;
+  background-color: gold;
+  width: 12.5%;
+  height: 100px;
+  margin: 20px 2.5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.middle-content .boxes .box3 {
+  color: white;
+  background-color: cadetblue;
+  width: 12.5%;
+  height: 100px;
+  margin: 20px 2.5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.middle-content .boxes .box4 {
+  color: white;
+  background-color: coral;
+  width: 12.5%;
+  height: 100px;
+  margin: 20px 2.5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.middle-content .boxes .box5 {
+  color: white;
+  background-color: crimson;
+  width: 12.5%;
+  height: 100px;
+  margin: 20px 2.5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.middle-content .boxes .box6 {
+  color: white;
+  background-color: forestgreen;
+  width: 12.5%;
+  height: 100px;
+  margin: 20px 2.5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.middle-content .boxes .box7 {
+  color: white;
+  background-color: darkorchid;
+  width: 12.5%;
+  height: 100px;
+  margin: 20px 2.5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.middle-content .boxes .box8 {
+  color: white;
+  background-color: hotpink;
+  width: 12.5%;
+  height: 100px;
+  margin: 20px 2.5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.middle-content .boxes .box9 {
+  color: white;
+  background-color: indigo;
+  width: 12.5%;
+  height: 100px;
+  margin: 20px 2.5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.middle-content .boxes .box10 {
+  color: white;
+  background-color: dodgerblue;
+  width: 12.5%;
+  height: 100px;
+  margin: 20px 2.5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
