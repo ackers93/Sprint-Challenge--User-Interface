@@ -169,6 +169,7 @@ h5 {
   display: flex;
   justify-content: space-between;
   padding-bottom: 30px;
+  align-items: flex-end;
 }
 
 .header .links .logo a {
